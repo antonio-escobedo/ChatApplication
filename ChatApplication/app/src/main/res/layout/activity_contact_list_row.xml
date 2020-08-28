@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rowBg">
+        <ImageView
+            android:id="@+id/contactImg"
+            android:layout_margin="10px"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/contact"
+            android:scaleType="fitXY"/>
+        <RelativeLayout
+            android:id="@+id/movieDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/contactImg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactName"
+                android:text=""
+                android:layout_margin="10px"
+                android:textColor="@color/movieTitle"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/contactNumber"
+                android:layout_below="@id/contactName"
+                android:textColor="@color/yearTitle"
+                android:textSize="16sp"
+                android:layout_margin="10px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/contactEmail"
+                android:layout_margin="10px"
+                android:textSize="16sp"
+                android:textColor="@color/movieTitle"
+                android:layout_below="@id/contactNumber"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteImg"
+                android:src="@drawable/delete"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10px"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateImg"
+                android:src="@drawable/update"
+                android:layout_toLeftOf="@id/deleteImg"
+                android:layout_margin="10px"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chatImg"
+                android:src="@drawable/chat"
+                android:layout_toLeftOf="@id/updateImg"
+                android:layout_margin="10px"/>
+
+            </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
